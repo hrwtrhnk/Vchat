@@ -10,4 +10,7 @@ class TopicsController < ApplicationController
   def create
   end
 
+  def search
+  end
+
 end
