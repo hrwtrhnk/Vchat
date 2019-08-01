@@ -1,0 +1,59 @@
+<body>
+<!--DOCCTYPE HTML-->
+<header>
+  <div class="main-header">
+    <div class="main-header__left-box">
+      <div class="main-header__left-box__home">
+        <i class="material-icons">home</i>
+      </div>
+      <div class="main-header__left-box__add">
+        <i class="material-icons">add_circle_outline</i>
+      </div>
+    </div>
+    <div class="main-header__center-box">
+      <div class="main-header__center-box__title">Vch@</div>
+    </div>
+    <div class="main-header__right-box">
+      <div class="main-header__right-box__icon">
+        <a href="！！！">
+        <i class="material-icons">account_circle</i>
+        </a>
+      </div>
+      <div class="main-header__right-box__nickname">
+        watari
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="left-contents">
+  <div class="contents title">
+    <div class="title__text"></div>
+  </div>
+  <div class="contents movie">
+    <div class="movie__holder">
+      <iframe width="320" height="210" padding='20' src="https://www.youtube.com/embed/gpQBgJXRT1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="contents current-users">
+    <div class="each-user">
+      <div class="each-user__icon">🦇</div>
+      <div class="each-user__nickname">コーサカ</div>
+    </div>
+    <div class="each-user">
+      <div class="each-user__icon">🐺</div>
+      <div class="each-user__nickname">アンジョー</div>
+    </div>
+  </div>
+</div>
+
+<div class="right-contents">
+  <div class="chat">
+    <div class="messages"></div>
+    <div class="form">
+      <%= form_for @topic @posts%>
+    </div>
+  </div>
+</div>
+
+</body>

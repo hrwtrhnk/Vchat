@@ -1,1 +1,31 @@
+.home-wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: $lightgray;
+}
 
+.home-title{
+  height: 200px;
+  font-size: 150px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.home-detail{
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 15px 15px 15px;
+}
+
+h1{
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.home-btns{
+  display: flex;
+}
+
+.totopic-btn{
+
+}

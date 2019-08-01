@@ -1,0 +1,34 @@
+<div class="account-page" id="account-page">
+<div class="account-page__inner clearfix">
+<div class="account-page__inner--left account-page__header">
+<h2>アカウントの編集</h2>
+</div>
+<div class="account-page__inner--right user-form">
+<form class="edit_user" id="edit_user_1" action="/users/1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="zNa+45pU3IMiBtkDjDifW5leEMiNzL7mXtthHPDzh4ovMYeVRzhf67/iIh4okuTrvDe2gGJVszRsz33X+41ybw=="><div class="field">
+<div class="field-label">
+<label for="user_ニックネーム">ニックネーム</label>
+</div>
+<div class="field-input">
+<input autofocus="autofocus" type="text" value="watari" name="user[nickname]" id="user_nickname">
+</div>
+</div>
+<div class="field">
+<div class="field-label">
+<label for="user_メールアドレス">メールアドレス</label>
+</div>
+<div class="field-input">
+<input type="email" value="watari@watari" name="user[email]" id="user_email">
+</div>
+</div>
+<div class="actions">
+<input type="submit" name="commit" value="更新" class="btn" data-disable-with="更新">
+</div>
+<div class="emptybox"></div>
+<div class="line"></div>
+<div class="other-btns">
+<a class="other-btns__logout-btn" rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
+<a class="other-btns__to-toppage-btn" href="http://localhost:3000/">トップページに戻る</a>
+</div>
+</form></div>
+</div>
+</div>
