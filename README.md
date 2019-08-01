@@ -22,3 +22,34 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## topicsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|video_url|text|default: ''|
+|user_id|references|foreign_key: true|
+
+### Association
+- has_many :posts
+- belongs_to :user
+
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|text|default: ''|
+|topic_id|references|foreign_key: true|
+|user_id|references|foreign_key: true|
+
+### Association
+- belongs_to :topic
+- has_many :users
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
+### Association
+- belongs_to :post
+- has_many :topics
