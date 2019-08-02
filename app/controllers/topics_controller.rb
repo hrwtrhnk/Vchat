@@ -13,7 +13,7 @@ class TopicsController < ApplicationController
     if @topic.save
       redirect_to controller: :topics, action: :index
     else
-      reder :new, notice: "スレッドを作成できませんでした"
+      render :new, notice: "スレッドを作成できませんでした"
     end
   end
 
@@ -24,7 +24,7 @@ class TopicsController < ApplicationController
   private
 
   def topic_params
-    params.require(:topic).permit(:title, :video_url, :user_id)
+    params.require(:topic).permit(:title, :video_url, :channel).merge(user_id: current_user.id)
   end
 
 end

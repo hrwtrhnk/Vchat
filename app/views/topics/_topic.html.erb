@@ -1,14 +1,20 @@
 <div class="topic">
   <div class="video-box">
     <div class="video">
-    <%# <iframe width="320" height="210" padding='20' src="<%= @topic.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> %>
+    <iframe width="200" height="120" padding='20' src="<%= topic.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="video-detail">
+    <p>タイトル↓</p>
     <div class="video-detail__title">
       <%= topic.title %>
     </div>
-    <div class="video-detail__channel">
+      <p><br/>チャンネル↓</p>
+      <div class="video-detail__channel">
+        <%= topic.channel%>
+      </div>
+      <div class="video-detail__btn">
+        <a href="/topics/<%= topic.id %>/posts" class="toposts-btn">スレッドを開く</a>
     </div>
   </div>
 </div>

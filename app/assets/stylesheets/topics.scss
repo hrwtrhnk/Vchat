@@ -1,0 +1,110 @@
+.topics-right-content{
+  float: right;
+  height: calc(100vh - 105px);
+  width: calc(400px - 20px - 40px);
+  background-color: $kosaka;
+  border-radius: 5px;
+  margin: 20px 20px 20px 0px;
+}
+
+.topics-left-content{
+  float: left;
+  height: calc(100vh - 70px - 35px);
+  width: calc(100vw - 400px);
+  margin: 20px;
+}
+
+.search-box{
+  height: 60px;
+}
+
+.topic-search{
+  width: calc(100% - 40px - 51px);
+  margin-top: 10px;
+  line-height: 40px;
+  border-radius: 3px;
+  border: 2px solid $dark-anjyo;
+}
+
+.search-btn{
+  width: 80px;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 2px solid $dark-anjyo;
+  font-size: 15px;
+  padding: 1px;
+}
+
+.topic-left-down-box{
+  height: calc(100vh - 175px);
+  background-color: $anjyo;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+.topics{
+  padding: 20px;
+}
+
+.topic{
+  height: 140px;
+  background-color: $transparent;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.video-box{
+  background-color: $transparent;
+  height: 120px;
+  width: 200px;
+  display: flex;
+}
+
+.video-box{
+  float: left;
+}
+
+.video-detail{
+  height:120px;
+  width: calc(100% - 200px - 10px);
+  margin-left: 10px;
+  float: right;
+  position: relative;
+  font-size: 15px;
+  &__title{
+    border: 1px solid $dark-anjyo;
+    background-color: $transparent;
+    margin-top: 0px;
+    white-space:nowrap;
+    overflow:scroll;
+  }
+  &__channel{
+    width: calc(100% - 100px);
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid $dark-anjyo;
+    background-color: $transparent;
+    white-space:nowrap;
+    overflow:scroll;
+  }
+  &__btn{
+    float: right;
+  }
+}
+
+.toposts-btn{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  margin-top: 0.5px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #FFF;
+  background: $dark-anjyo;
+  &:hover{
+    background: $dark-kosaka;
+  }
+}
+
