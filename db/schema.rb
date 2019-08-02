@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_01_043614) do
+ActiveRecord::Schema.define(version: 2019_08_02_010624) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "content"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_08_01_043614) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "channel"
     t.index ["user_id"], name: "index_topics_on_user_id"
   end
 

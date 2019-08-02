@@ -1,0 +1,20 @@
+
+<div class="newtopic-wrapper">
+  <div class="newtopic-form">
+    <%= form_for @topic do |f| %>
+      <div class="form-title">
+        <%= f.label "動画のタイトルを入力してください", class: "label" %><br/>
+        <%= f.text_field :title, class: "text-field" %>
+      </div>
+      <div class="form-channel">
+        <%= f.label "動画のチャンネル名を入力してください", class: "label" %><br/>
+        <%= f.text_field :channel, class: "text-field" %>
+      </div>
+      <div>
+        <%= f.label "動画のURLを入力してください"%><br/>
+        <%= f.text_field, class: "text-field" %>
+        <%= f.submit "スレッド作成", class: "newtopic-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>

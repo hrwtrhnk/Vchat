@@ -43,7 +43,7 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :topic
-- has_many :users
+- belongs_to :user
 
 ## usersテーブル
 |Column|Type|Options|
@@ -51,5 +51,5 @@ Things you may want to cover:
 |name|string|null: false|
 
 ### Association
-- belongs_to :post
+- has_many :posts
 - has_many :topics
