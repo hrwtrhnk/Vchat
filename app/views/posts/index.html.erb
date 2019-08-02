@@ -1,2 +1,69 @@
+<body>
+<!--DOCCTYPE HTML-->
 <header>
+  <div class="main-header">
+    <div class="main-header__left-box">
+      <div class="main-header__left-box__home">
+        <i class="material-icons">home</i>
+        <a href="/topics"></a>
+      </div>
+      <div class="main-header__left-box__add">
+        <i class="material-icons">add_circle_outline</i>
+        <a href="/topics/new"></a>
+      </div>
+    </div>
+    <div class="main-header__center-box">
+      <div class="main-header__center-box__title">
+        <p>Vch@</p>
+      </div>
+    </div>
+    <div class="main-header__right-box">
+      <% if user_signed_in? %>
+        <div class="main-header__right-box__icon">
+          <i class="material-icons">account_circle</i>
+          </a>
+        </div>
+        <div class="main-header__right-box__nickname">
+          <%= current_user.name %>
+        </div>
+      <% else %>
+        <div class="header-btns">
+          <a href="/users/sign_up" class="signup-btn">新規登録</a>
+          <a href="/users/sign_in" class="login-btn">ログイン</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </header>
+
+<div class="left-contents">
+  <div class="contents title">
+    <div class="title__text"></div>
+  </div>
+  <div class="contents movie">
+    <div class="movie__holder">
+      <iframe width="320" height="210" padding='20' src="https://www.youtube.com/embed/gpQBgJXRT1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="contents current-users">
+    <div class="each-user">
+      <div class="each-user__icon">🦇</div>
+      <div class="each-user__nickname">コーサカ</div>
+    </div>
+    <div class="each-user">
+      <div class="each-user__icon">🐺</div>
+      <div class="each-user__nickname">アンジョー</div>
+    </div>
+  </div>
+</div>
+
+<div class="right-contents">
+  <div class="chat">
+    <div class="messages"></div>
+    <%# <div class="form">
+      <%= form_for @topic @posts%>
+    </div> %>
+  </div>
+</div>
+
+</body>
