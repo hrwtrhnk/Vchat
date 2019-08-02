@@ -6,11 +6,13 @@
           <i class="material-icons">home</i>
         </a>
       </div>
+      <% if user_signed_in? %>
       <div class="main-header__left-box__add">
         <a href="/topics/new">
           <i class="material-icons">add_circle_outline</i>
         </a>
       </div>
+      <% end %>
     </div>
     <div class="main-header__center-box">
       <div class="main-header__center-box__title">
@@ -19,12 +21,11 @@
     </div>
     <div class="main-header__right-box">
       <% if user_signed_in? %>
-        <div class="main-header__right-box__icon">
-          <i class="material-icons">account_circle</i>
-          </a>
-        </div>
         <div class="main-header__right-box__nickname">
           <%= current_user.name %>
+        </div>
+        <div class="main-header__right-box__btn">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'logout-btn' %>
         </div>
       <% else %>
         <div class="header-btns">
@@ -41,15 +42,15 @@
 <div class="topics-left-content">
   <div class="search-box">
     <%= form_tag('/topics/search', method: :get) do %>
-      <input class="topic-search" name="keyword" placeholder="動画タイトルで検索" type="text" value="">
-      </input>
-      <%= submit_tag '検索', :name => nil %>
+      <input class="topic-search" name="keyword" placeholder="動画タイトルで検索" type="text" value=""></input>
+      <%= submit_tag '　🔍　', :name => nil , :class =>"search-btn" %>
     <% end %>
   </div>
-  <div class="topics">
-    <%= render @topics %>
+  <div class="topic-left-down-box">
+    <div class="topics">
+      <%= render @topics %>
+    </div>
   </div>
-
 </div>
 
 

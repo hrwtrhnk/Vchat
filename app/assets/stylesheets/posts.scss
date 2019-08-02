@@ -40,15 +40,15 @@ header{
     left: 50%;
     p{
       display: inline-block;
+      font-family: 'Quicksand', sans-serif;
     }
   }
   &__right-box{
     position: absolute;
     right: 25px;
     display: flex;
-    
-    &__icon{
-      padding-top: 6px;
+    &__btn{
+      
     }
     &__nickname{
       font-size: 18px;
@@ -70,7 +70,6 @@ header{
 // ユーザーがログインしてないとき
 .header-btns{
   display:flex;
-
   text-align: center;
   a{
     display: inline-block;
@@ -91,8 +90,26 @@ header{
   }
 }
 
+// ログアウト
+.logout-btn{
+  display: inline-block;
+  height: 50px;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 50px;
+  color: white;
+  margin-left: 20px;
+  &:hover{
+    color: $dark-kosaka;
+  }
+}
 
 
+// body
 body{
   width: 100vw;
   height: 100vh;
@@ -116,7 +133,7 @@ body{
   height: 100px;
   &__text{
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -163,7 +180,7 @@ body{
 
 .message{
   display: flex;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: $transparent;
   margin: 5px;
   padding-bottom: 10px;
   border-radius: 8px;
@@ -178,11 +195,11 @@ body{
   bottom: 20px;
   &__message{
     width: calc(100vw - 360px - 40px - 35px - 60px - 60px);
-    border: 2px solid #0a7f8f;
+    border: 2px solid $dark-anjyo;
   }
   &__send-btn{
     width: 60px;
-    border: 2px solid #0a7f8f;
+    border: 2px solid $dark-anjyo;
     border-radius: 5px;
     font-size: 12px;
     padding: 1px;
