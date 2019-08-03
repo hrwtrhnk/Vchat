@@ -53,3 +53,4 @@ Things you may want to cover:
 ### Association
 - has_many :posts
 - has_many :topics
+
