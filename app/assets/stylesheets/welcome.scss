@@ -1,32 +1,51 @@
 .home-wrapper{
   height: 100vh;
   width: 100vw;
-  background-color: $lightgray;
+  background-color: rgb(11, 160, 168);
+  color: white;
 }
 
 .home-title{
-  height: 300px;
+  height: 250px;
+  width: 500px;
+  margin: 0 auto;
   font-size: 150px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 90px;
   font-family: 'Quicksand', sans-serif;
+  p{
+    border-left: solid 15px $dark-anjyo;
+    border-right: solid 15px $dark-anjyo;
+  }
 }
 
 .home-detail{
+  width: 1100px;
   font-size: 20px;
   text-align: center;
-  margin: 0px 15px 15px 15px;
+  margin: 0 auto;
+  padding-top: 80px;
   font-family: 'YuGothic';
-
+  p{
+    border-left: solid 10px $dark-kosaka;
+    border-right: solid 10px $dark-kosaka;
+  }
 }
 
 h1{
-  padding-top: 15px;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
   font-size: 15px;
 }
 
 .home-bottom{
-  width: 510px;
+  width: 530px;
   padding-right: 20px;
   margin: 0 auto;
+ .hbtn{
+  text-decoration: none;
+  color: white;
+  border: solid 3px white;
+ }
 }
